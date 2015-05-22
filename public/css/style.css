@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box; }
-
+.button-group {
+  height: 100px;
+  position: fixed;
+}
 .category-button {
+  width: 100px;
   border: 1px solid black;
   background: none;
   padding: 20px;
@@ -13,7 +17,6 @@
 
 .flash-card {
   width: 60%;
-  height: 400px;
   margin: 0 auto;
   margin-top: 40px;
   border: 1px solid black;
@@ -24,6 +27,8 @@
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px; }
+  .flash-card h3 {
+    float: right; }
   .flash-card .flash-card-answers {
     width: 100%;
     margin: 0 auto;
@@ -58,7 +63,10 @@
     color: red; }
 
 #statistics {
-  padding: 40px; }
+  padding-left: 15px;
+  position: fixed;
+  padding-top: 350px; }
+
   #statistics:before, #statistics:after {
     content: " ";
     /* 1 */
@@ -71,7 +79,7 @@
     margin: 0 auto; }
     #statistics #scoreboard h3 {
       margin-right: 40px;
-      float: left; }
+       }
       #statistics #scoreboard h3:last-child {
         margin-right: 0; }
       #statistics #scoreboard h3 span {
